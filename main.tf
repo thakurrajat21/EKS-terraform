@@ -124,7 +124,7 @@ resource "aws_security_group_rule" "nodes_ssh" {
 #############################################
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "~> 20.0"
+  version = "~> 20.24"
 
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
