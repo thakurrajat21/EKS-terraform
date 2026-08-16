@@ -150,6 +150,9 @@ module "eks" {
 
       instance_types = var.node_instance_types
 
+      # Explicitly set AMI type (very important)
+      ami_type = "AL2_x86_64"        # or "AL2023_x86_64_STANDARD" for newer
+      
       min_size     = var.min_size
       max_size     = var.max_size
       desired_size = var.desired_size
